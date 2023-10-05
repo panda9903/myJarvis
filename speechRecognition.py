@@ -56,7 +56,7 @@ if __name__ == "__main__":
     assistant_speaks("What's your name, Human?")
     name = 'Human'
     name = get_audio()
-    assistant_speaks("Hello, " + name + '.')
+    assistant_speaks("Hello, " + str(name) + '.')
 
     while (1):
 
@@ -67,7 +67,7 @@ if __name__ == "__main__":
             continue
 
         if "exit" in str(text) or "bye" in str(text) or "sleep" in str(text):
-            assistant_speaks("Ok bye, " + name+'.')
+            assistant_speaks("Ok bye, " + str(name) +'.')
             break
 
         # calling process text to process the query
